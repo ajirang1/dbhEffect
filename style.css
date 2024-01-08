@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+@keyframes hereThere {
+    from {
+        opacity: 0%;
+    }
+
+    30% {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    user-select: none;
+    overflow: hidden;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: light;
+}
+
+div.main {
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+
+}
+
+h1.mainText {
+    opacity: 0%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 200;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-delay: 0.4s;
+}
+
+span.superscript {
+    opacity: 0%;
+    color: rgb(67, 170, 255) !important; /**this is um blue color in dbh idunno*/
+    /** color: rgb(255, 255, 255); */
+    font-weight: 700;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-delay: 0.4s;
+}
+
+
+div.square1 {
+    background-color: rgba(0, 141, 255, 0.39);
+    width: 20%;
+    height: 40%;
+    position: absolute; 
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    animation-name: hereThere;
+    animation-duration: 0.3s;
+}
+
+div.square2 {
+    background-color: rgba(0, 141, 255, 0.39);
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-name: hereThere;
+    animation-duration: 0.4s;
+}
+
+div.square3 {
+    background-color: rgba(0, 141, 255, 0.39);
+    width: 10%;
+    height: 40%;
+    position: absolute;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: hereThere;
+    animation-duration: 0.1s;
+}
